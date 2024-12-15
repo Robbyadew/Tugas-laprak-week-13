@@ -1,0 +1,32 @@
+class AlatTulis:
+    def __init__(self, nama, stok, harga_satuan):
+        self.nama = nama
+        self.stok = stok
+        self.harga_satuan = harga_satuan
+        self.harga_total = stok * harga_satuan
+
+
+
+bolpoint = AlatTulis("Bolpoint", 10, 2000)
+pensil = AlatTulis("Pensil", 10, 1000)
+penghapus = AlatTulis("Penghapus", 10, 500)
+
+print("         Daftar Alat Tulis         ")
+
+print(f"\nNama         : {bolpoint.nama}")
+print(f"Stok         : {bolpoint.stok}")
+print(f"Harga Satuan : Rp {bolpoint.harga_satuan:}")
+print(f"Harga Total  : Rp {bolpoint.harga_total:}")
+
+print(f"\nNama         : {pensil.nama}")
+print(f"Stok         : {pensil.stok}")
+print(f"Harga Satuan : Rp {pensil.harga_satuan:}")
+print(f"Harga Total  : Rp {pensil.harga_total:}")
+
+print(f"\nNama         : {penghapus.nama}")
+print(f"Stok         : {penghapus.stok}")
+print(f"Harga Satuan : Rp {penghapus.harga_satuan:}")
+print(f"Harga Total  : Rp {penghapus.harga_total:}")
+
+total_harga = bolpoint.harga_total + pensil.harga_total + penghapus.harga_total
+print(f"\nTotal Harga Semua Alat Tulis : Rp {total_harga:}")
